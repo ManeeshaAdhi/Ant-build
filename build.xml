@@ -1,6 +1,6 @@
 <project name="merritos">
 <target name="compile">
-<javac srcdir="src"destdir="bin">
+<javac srcdir="src"destdir="bin"/>
 </target>
 <target name="package">
 <jar jarfile="dist/alphabets.jar"basedir="bin"/>
