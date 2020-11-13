@@ -1,9 +1,9 @@
-<project name="merritos">
-<target name="compile">
-<javac srcdir="src"destdir="bin"/>
+<project name = "merritos">
+<target name = "compile">
+<javac srcdir ="src" destdir="bin"/>
 </target>
-<target name="package">
-<jar jarfile="dist/alphabets.jar"basedir="bin"/>
+<target name = "package">
+<jar jarfile="dist/alphabets.jar" basedir="bin"/>
 </target>
 </project>
 
