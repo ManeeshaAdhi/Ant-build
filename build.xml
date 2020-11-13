@@ -1,9 +1,21 @@
-<project name = "merritos">
-<target name = "compile">
-<javac srcdir ="src" destdir="bin"/>
+<project name = "merritos"  depends="clean">
+<property name = "src"  location="src"/>
+<property name = "output"  location="bin"/>
+<property name = "dist"  location="dist"/>
+<target name = "clean" depends="init,compile,package">
+    <delete dir="${output}"/>
+    <delete dir="${dist}"/>
+</target>
+<target name ="init">
+    <mkdir ="${output}"/>
+    <mkdir ="${output}"/>
+</target>
+<target name="compile">
+    <javac srcdir ="${src}" destdir="${output}"/>
 </target>
 <target name = "package">
-<jar jarfile="dist/alphabets.jar" basedir="bin"/>
+    <mkdir ="${dist}"/>
+    <jar jarfile="dist/alphabets.jar" basedir="${output}"/>
 </target>
 </project>
 
