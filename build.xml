@@ -5,7 +5,7 @@
     <delete dir="${output}"/>
 </target>
 <target name ="init">
-    <mkdir ="${output}"/>
+    <mkdir dir ="${output}"/>
 </target>
 <target name="compile">
     <javac srcdir ="${src}" destdir="${output}"/>
